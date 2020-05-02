@@ -1,4 +1,8 @@
 module.exports = {
+  siteMetadata: {
+    author: "Amar Zia Arslaan",
+    title: "Portfolio",
+  },
   pathPrefix: "/portfolio-light-gatsby",
   plugins: [
     "gatsby-plugin-resolve-src",

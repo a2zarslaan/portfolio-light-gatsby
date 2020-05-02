@@ -1,13 +1,23 @@
 import React from "react";
-import { Link } from "gatsby";
+import { Link, graphql, useStaticQuery } from "gatsby";
 
 import Container from "components/Container";
 
 const Header = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          author
+          title
+        }
+      }
+    }
+  `);
   return (
     <header>
       <Container>
-        <p>My Gatsby Site</p>
+        <p>{data.site.siteMetadata.author}</p>
         <ul>
           <li>
             <Link to="/">Home</Link>

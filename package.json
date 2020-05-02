@@ -17,6 +17,7 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "env-cmd": "^10.1.0",
     "gh-pages": "^2.2.0"
   },
   "keywords": [
@@ -27,7 +28,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "env-cmd -f .env.development gatsby develop",
     "lint": "Get started linting your code with Eslint and stylelint",
     "format": "Get started formatting your code with Eslint, Prettier, and stylelint",
     "start": "yarn develop",
