@@ -1,20 +1,18 @@
 header {
-
   width: 100%;
-  color: white;
-  background-color: rebeccapurple;
+  color: var(--color-primary-text);
+  border-bottom: var(--line);
 
   .container {
     display: flex;
     justify-content: space-between;
-    height: 4em;
-    line-height: 4em;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
   }
 
   ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
   }
 
   li {
@@ -22,16 +20,15 @@ header {
   }
 
   a {
+    color: inherit;
     display: block;
-    color: white;
-    opacity: .8;
-    padding: 0 .5em;
+    padding: 0 0.5em;
+    text-decoration: none;
+    font-size: 1.4rem;
   }
 
   p {
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bold;
-    margin: 0;
   }
-
 }

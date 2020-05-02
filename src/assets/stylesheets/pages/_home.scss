@@ -1,23 +1,35 @@
 .page-home {
-
   h1 {
-    color: black;
+    font-size: 6rem;
+    font-family: BioRhyme, serif;
+    font-weight: 900;
+    //color: var(--color-primary-text);
+
+    // gradient effect in heading
+    background: -webkit-linear-gradient(
+      240deg,
+      rgb(0, 217, 255),
+      rgb(26, 224, 204),
+      rgb(66, 213, 235),
+      rgb(94, 149, 217),
+      rgb(102, 102, 255)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
-  .gatsby-astronaut {
+  // .gatsby-astronaut {
+  //   overflow: hidden;
+  //   width: 10em;
+  //   height: 10em;
+  //   background-color: rebeccapurple;
+  //   border-radius: 100%;
+  //   border: solid 6px rebeccapurple;
+  //   margin: 0 auto 1em;
 
-    overflow: hidden;
-    width: 10em;
-    height: 10em;
-    background-color: rebeccapurple;
-    border-radius: 100%;
-    border: solid 6px rebeccapurple;
-    margin: 0 auto 1em;
-
-    img {
-      width: 100%;
-    }
-
-  }
-
+  //   img {
+  //     width: 100%;
+  //   }
+  // }
 }

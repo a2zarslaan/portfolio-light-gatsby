@@ -1,37 +1,35 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
+import React from "react";
+import PropTypes from "prop-types";
+import Helmet from "react-helmet";
 
-import 'assets/stylesheets/application.scss';
+import "assets/stylesheets/application.scss";
 
-import Header from 'components/Header';
-import Footer from 'components/Footer';
+import Header from "components/Header";
+import Footer from "components/Footer";
 
 const Layout = ({ children, pageName }) => {
+  let className = "";
 
-  let className = '';
-
-  if ( pageName ) {
+  if (pageName) {
     className = `${className} page-${pageName}`;
   }
 
   return (
     <>
-      <Helmet bodyAttributes={{ class: className}}>
+      <Helmet bodyAttributes={{ class: className }}>
         <title>Gatsby Site</title>
       </Helmet>
       <div className="wrapper">
         <Header />
-        <main>{ children }</main>
+        <main>{children}</main>
         <Footer />
       </div>
     </>
   );
-
 };
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
 export default Layout;

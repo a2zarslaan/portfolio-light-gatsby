@@ -1,10 +1,11 @@
 {
-  "name": "gatsby-starter-sass",
-  "description": "A Gatsby starter with Sass and no assumptions",
-  "version": "0.1.2",
-  "author": "Colby Fayock <hello@colbyfayock.com>",
+  "name": "portfolio-light-gatsby",
+  "description": "A Gatsby starter with Sass",
+  "version": "1.0.0",
+  "author": "Amar Zia Arslaan",
   "dependencies": {
     "gatsby": "^2.19.43",
+    "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-react-helmet": "^3.1.23",
     "gatsby-plugin-resolve-src": "^2.0.0",
     "gatsby-plugin-sass": "^2.1.30",
@@ -15,7 +16,9 @@
     "react-dom": "^16.13.0",
     "react-helmet": "^5.2.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  },
   "keywords": [
     "gatsby",
     "sass",
@@ -29,13 +32,14 @@
     "format": "Get started formatting your code with Eslint, Prettier, and stylelint",
     "start": "yarn develop",
     "serve": "gatsby serve",
-    "test": "echo 'Write tests! -> https://gatsby.dev/unit-testing'"
+    "test": "echo 'Write tests! -> https://gatsby.dev/unit-testing'",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/colbyfayock/gatsby-starter-sass"
+    "url": "https://github.com/a2zarslaan/portfolio-light-gatsby"
   },
   "bugs": {
-    "url": "https://github.com/colbyfayock/gatsby-starter-sass/issues"
+    "url": "https://github.com/a2zarslaan/portfolio-light-gatsby/issues"
   }
 }
