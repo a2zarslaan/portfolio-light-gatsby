@@ -3,11 +3,39 @@
     color: var(--color-yellow);
   }
 
+  main h2 {
+    color: var(--color-black);
+    background: var(--color-yellow);
+    padding: 10rem 2rem;
+  }
+
+  main h2:hover {
+    color: var(--color-white);
+    //background-color: var(--color-black);
+    background: -webkit-linear-gradient(
+      240deg,
+      rgb(0, 217, 255),
+      rgb(26, 224, 204),
+      rgb(66, 213, 235),
+      rgb(94, 149, 217),
+      rgb(102, 102, 255)
+    );
+    transform: translateY(-0.6rem);
+    box-shadow: var(--shadow-dark);
+    transition: all 0.2s;
+  }
+
   header {
     background-color: var(--color-yellow);
   }
 
-  main {
-    margin: 2.5rem;
+  a {
+    text-decoration: none;
+    font-family: BioRhyme, sans-serif;
+  }
+
+  main li {
+    list-style-type: none;
+    margin-top: 2rem;
   }
 }
