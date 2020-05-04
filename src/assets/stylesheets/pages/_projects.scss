@@ -12,7 +12,7 @@
   main h2:hover {
     color: var(--color-white);
     //background-color: var(--color-black);
-    @include blue-gradient;
+    @include purple-gradient;
     transform: translateY(-0.6rem);
     box-shadow: var(--shadow-dark);
     transition: all 0.2s;

@@ -1,6 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { Link, graphql, useStaticQuery } from "gatsby";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 import Layout from "components/Layout";
 import Container from "components/Container";
@@ -37,10 +38,16 @@ const ProjectsPage = () => {
           {data.allMarkdownRemark.edges.map((edge) => {
             return (
               <li>
-                <Link to={`/projects/${edge.node.fields.slug}`}>
+                <AniLink
+                  cover
+                  direction="down"
+                  to={`/projects/${edge.node.fields.slug}`}
+                  bg="#fccd04"
+                  duration={0.5}
+                >
                   <h2>{edge.node.frontmatter.title}</h2>
                   {/* <p>{edge.node.frontmatter.date}</p> */}
-                </Link>
+                </AniLink>
               </li>
             );
           })}

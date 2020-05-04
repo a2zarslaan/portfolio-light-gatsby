@@ -60,3 +60,8 @@
     rgb(102, 102, 255)
   );
 }
+
+@mixin purple-gradient {
+  background-color: #fbb034;
+  background-image: -webkit-linear-gradient(120deg, #ffdd00 10%, #fbb034 74%);
+}

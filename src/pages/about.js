@@ -13,6 +13,12 @@ const AboutPage = () => {
       <Container>
         <h1>About</h1>
         <p>
+          Currently working as a Research Assistant with the SFI research group
+          called V-Sense in Trinity College Dublin, contributing mainly in the
+          SAUCE project. The project involves the development of a Virtual
+          Reality proof of concept to demonstrate the findings of the research.
+        </p>
+        <p>
           I strongly believe in the Japanese philosophy of work, also known as
           Kaizen, which means continuous improvement. This motivates me to
           invest all my free time in learning something new, honing my skills
