@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, graphql, useStaticQuery } from "gatsby";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 import Container from "components/Container";
 
@@ -20,16 +21,36 @@ const Header = () => {
         <p>{data.site.siteMetadata.author}</p>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <AniLink cover to="/" duration={0.7}>
+              Home
+            </AniLink>
           </li>
           <li>
-            <Link to="/about/">About</Link>
+            <AniLink
+              cover
+              direction="right"
+              to="/about/"
+              bg="#da7cff"
+              duration={0.7}
+            >
+              About
+            </AniLink>
           </li>
           <li>
-            <Link to="/projects/">Projects</Link>
+            <AniLink cover to="/projects/" bg="#fccd04" duration={0.7}>
+              Projects
+            </AniLink>
           </li>
           <li>
-            <Link to="/contact/">Contact</Link>
+            <AniLink
+              cover
+              direction="right"
+              to="/contact/"
+              bg="#17e9e0"
+              duration={0.7}
+            >
+              Contact
+            </AniLink>
           </li>
         </ul>
       </Container>

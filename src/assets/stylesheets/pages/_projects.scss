@@ -12,14 +12,7 @@
   main h2:hover {
     color: var(--color-white);
     //background-color: var(--color-black);
-    background: -webkit-linear-gradient(
-      240deg,
-      rgb(0, 217, 255),
-      rgb(26, 224, 204),
-      rgb(66, 213, 235),
-      rgb(94, 149, 217),
-      rgb(102, 102, 255)
-    );
+    @include blue-gradient;
     transform: translateY(-0.6rem);
     box-shadow: var(--shadow-dark);
     transition: all 0.2s;
