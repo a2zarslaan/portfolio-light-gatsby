@@ -16,7 +16,7 @@ const IndexPage = () => {
         {/* <p className="gatsby-astronaut">
           <img src={img_gatsby} alt="Build with Gatsby!" />
         </p> */}
-        <h1>Amar Z. Arslaan</h1>
+        <h1>Hello! I'm Amar</h1>
         <p>
           Welcome to my site. Its a living digital space where I've gathered my
           work, ideas, hobbies, goals, and passions.

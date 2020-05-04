@@ -1,6 +1,6 @@
 header {
   width: 100%;
-  color: var(--color-primary-text);
+  color: var(--color-grey-light-2);
   border-bottom: var(--line);
 
   .container {
@@ -19,15 +19,26 @@ header {
     display: inline-block;
   }
 
-  a {
+  a:hover {
+    color: var(--color-purple);
+    background: var(--color-white);
+    border-radius: 0.5rem;
+    font-weight: 700;
+    transition: all 0.2s;
+  }
+
+  a:link,
+  a:visited {
     display: block;
     padding: 0 0.5em;
     text-decoration: none;
     font-size: 1.4rem;
+    color: var(--color-grey-dark-1);
   }
 
   p {
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: 700;
+    color: var(--color-grey-dark-2);
   }
 }
