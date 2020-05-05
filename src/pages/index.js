@@ -4,7 +4,7 @@ import Helmet from "react-helmet";
 import Layout from "components/Layout";
 import Container from "components/Container";
 
-// import img_gatsby from "assets/images/gatsby-astronaut.png";
+import img_gatsby from "assets/images/cover.png";
 
 const IndexPage = () => {
   return (
@@ -13,9 +13,9 @@ const IndexPage = () => {
         <title>Home Page</title>
       </Helmet>
       <Container>
-        {/* <p className="gatsby-astronaut">
-          <img src={img_gatsby} alt="Build with Gatsby!" />
-        </p> */}
+        <p className="cover">
+          <img src={img_gatsby} alt="Amar Zia Arslaan Artsy Photo" />
+        </p>
         <h1>Hello! I'm Amar</h1>
         <p>
           Welcome to my site. Its a living digital space where I've gathered my

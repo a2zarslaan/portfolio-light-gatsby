@@ -21,7 +21,7 @@ const Header = () => {
         <p>{data.site.siteMetadata.author}</p>
         <ul>
           <li>
-            <AniLink cover to="/" duration={0.7}>
+            <AniLink cover to="/" bg="#6666ff" duration={0.7}>
               Home
             </AniLink>
           </li>
@@ -30,7 +30,7 @@ const Header = () => {
               cover
               direction="right"
               to="/about/"
-              bg="#da7cff"
+              bg="#E16085"
               duration={0.7}
             >
               About
@@ -46,7 +46,7 @@ const Header = () => {
               cover
               direction="right"
               to="/contact/"
-              bg="#17e9e0"
+              bg="#00d9ff"
               duration={0.7}
             >
               Contact

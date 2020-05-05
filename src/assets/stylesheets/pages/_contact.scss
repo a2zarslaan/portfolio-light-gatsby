@@ -10,4 +10,13 @@
   header {
     background-color: var(--color-blue);
   }
+
+  header a,
+  header p {
+    color: var(--color-grey-light-1);
+  }
+
+  header a:hover {
+    color: var(--color-grey-dark-1);
+  }
 }

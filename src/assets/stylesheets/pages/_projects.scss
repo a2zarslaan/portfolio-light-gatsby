@@ -10,7 +10,7 @@
   }
 
   main h2:hover {
-    color: var(--color-white);
+    color: var(--color-grey-dark-2);
     //background-color: var(--color-black);
     @include yellow-gradient;
     transform: translateY(-0.6rem);
