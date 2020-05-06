@@ -21,7 +21,13 @@ const Header = () => {
         <p>{data.site.siteMetadata.author}</p>
         <ul>
           <li>
-            <AniLink cover to="/" bg="#6666ff" duration={0.7}>
+            <AniLink
+              cover
+              to="/"
+              bg="#6666ff"
+              duration={0.7}
+              className="header-link"
+            >
               Home
             </AniLink>
           </li>
@@ -32,12 +38,19 @@ const Header = () => {
               to="/about/"
               bg="#E16085"
               duration={0.7}
+              className="header-link"
             >
               About
             </AniLink>
           </li>
           <li>
-            <AniLink cover to="/projects/" bg="#fccd04" duration={0.7}>
+            <AniLink
+              cover
+              to="/projects/"
+              bg="#fccd04"
+              duration={0.7}
+              className="header-link"
+            >
               Projects
             </AniLink>
           </li>
@@ -48,6 +61,7 @@ const Header = () => {
               to="/contact/"
               bg="#00d9ff"
               duration={0.7}
+              className="header-link"
             >
               Contact
             </AniLink>

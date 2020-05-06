@@ -22,11 +22,11 @@ html {
     font-size: 50%; //1rem = 8px, 8/16 = 50%
   }
 
-  // we can still include phone just to test our logic out. Here we've given the phone a smaller font size then before so it's okay to use it now.
-  @include respond(phone) {
-    //width <= 600?
-    font-size: 37.5%; //1rem = 6px, 6/16 = 37.5%
-  }
+  // // we can still include phone just to test our logic out. Here we've given the phone a smaller font size then before so it's okay to use it now.
+  // @include respond(phone) {
+  //   //width <= 600?
+  //   font-size: 37.5%; //1rem = 6px, 6/16 = 37.5%
+  // }
 
   @include respond(big-desktop) {
     font-size: 75%; //1rem = 12px, 12/16 = 75%

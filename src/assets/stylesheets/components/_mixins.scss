@@ -21,6 +21,13 @@
   1em = 16px
 */
 @mixin respond($breakpoint) {
+  @if $breakpoint == small-phone {
+    //if the breakpoint is equal to phone, we'll use the following media query. Here the max-width was 600px, but since we're using the relative units (ems), we'll divide the max-width by the size of 1 em, ie 600/16 = 37.5
+    @media only screen and (max-width: $bp-smallest) {
+      @content;
+    }
+  }
+
   @if $breakpoint == phone {
     //if the breakpoint is equal to phone, we'll use the following media query. Here the max-width was 600px, but since we're using the relative units (ems), we'll divide the max-width by the size of 1 em, ie 600/16 = 37.5
     @media only screen and (max-width: $bp-small) {
