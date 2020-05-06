@@ -14,9 +14,9 @@ const IndexPage = () => {
       </Helmet>
       <Container>
         <p className="cover">
-          <img src={img_gatsby} alt="Amar Zia Arslaan Artsy Photo" />
+          <img src={img_gatsby} alt="Amar Zia Arslaan Being Artsy" />
         </p>
-        <h1>Hello! I'm Amar</h1>
+        <h1 className="heading">Hello! I'm Amar</h1>
         <p>
           Welcome to my site. Its a living digital space where I've gathered my
           work, ideas, hobbies, goals, and passions.

@@ -10,9 +10,9 @@
   }
 
   main h2:hover {
-    color: var(--color-grey-dark-2);
+    color: var(--color-white);
     //background-color: var(--color-black);
-    @include yellow-gradient;
+    @include blue-gradient;
     transform: translateY(-0.6rem);
     box-shadow: var(--shadow-dark);
     transition: all 0.2s;

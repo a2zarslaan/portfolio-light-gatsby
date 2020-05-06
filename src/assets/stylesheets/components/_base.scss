@@ -99,3 +99,15 @@ main {
   padding: 2.5rem;
   font-size: 2rem;
 }
+
+h1::selection {
+  background-color: var(--color-purple);
+  color: var(--color-white);
+}
+
+p::selection,
+li::selection,
+h2::selection,
+a::selection {
+  background-color: var(--color-yellow);
+}

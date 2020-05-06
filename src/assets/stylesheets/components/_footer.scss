@@ -5,13 +5,38 @@ footer {
     margin: 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-top: var(--line);
     padding: 2rem;
     box-sizing: border-box;
   }
+
   p {
     font-family: "Space Mono", sans-serif;
+    font-size: 1rem;
+    line-height: 1.2rem;
     font-weight: 100;
     color: var(--color-grey-dark-3);
+    white-space: pre-line;
+  }
+
+  .footer__icons {
+    display: flex;
+    align-items: center;
+    white-space: pre-wrap;
+
+    &-item {
+      margin: 0;
+      height: 3rem;
+      width: 3rem;
+      fill: var(--color-purple);
+      padding-left: 1rem;
+
+      &:hover {
+        transition: all 0.4s;
+        fill: var(--color-yellow);
+        transform: translateY(-4px);
+      }
+    }
   }
 }
