@@ -28,6 +28,9 @@
 }
 
 //defining SCSS variables for media queries as CSS variables cannot be used for this. The container max width is 1200px, that's why we're creating a bp here to cover the pink bg on top of the container
+$bp-big-desktop: 112.5em; // 1800px/16px = 112.5em
+
+//defining SCSS variables for media queries as CSS variables cannot be used for this. The container max width is 1200px, that's why we're creating a bp here to cover the pink bg on top of the container
 $bp-largest: 75em; // 1200px/16px = 75em
 
 //the font in cards starts shifting to new lines here, hence another bp. We'll reduce the root font size at this bp

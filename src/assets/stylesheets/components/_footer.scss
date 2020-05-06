@@ -32,6 +32,18 @@ footer {
       fill: var(--color-purple);
       padding-left: 1rem;
 
+      @include respond(tab-port) {
+        //width <= 900?
+        height: 4rem;
+        width: 4rem;
+      }
+
+      @include respond(phone) {
+        //width <= 600?
+        height: 5rem;
+        width: 5rem;
+      }
+
       &:hover {
         transition: all 0.4s;
         fill: var(--color-yellow);

@@ -76,8 +76,8 @@ body {
 
   transition: all 0.2s;
 
-  //adding media queries for a desktop first strategy. What's important to note here is that we're going to use em as the unit and also we'll define a variable for the width
-  @media only screen and (max-width: $bp-largest) {
+  @include respond(tab-land) {
+    font-size: 80%;
     margin: 0;
     max-width: 100%;
     width: 100%;
