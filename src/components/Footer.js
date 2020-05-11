@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
+import mail from "assets/images/SVG/mail.svg";
 import linked from "assets/images/SVG/linkedin.svg";
 import github from "assets/images/SVG/github.svg";
 import dribbble from "assets/images/SVG/dribbble.svg";
@@ -21,8 +22,9 @@ const Footer = () => {
     <footer>
       <Container>
         <p>
-          Made by {data.site.siteMetadata.author} with Gatsby. {"\n"} Typeset in
-          Space Mono. {"\n"} Hosted on Hithub Pages.
+          {/* Made by {data.site.siteMetadata.author} with Gatsby. {"\n"} Typeset in
+          Space Mono. {"\n"} Hosted on Hithub Pages. */}
+          Made with ❤️ using Gatsby.
         </p>
         {/* <p>Typeset in Space Mono.</p>
         <p>Hosted with Github Pages.</p> */}
@@ -47,7 +49,7 @@ const Footer = () => {
             </svg>
           </a>
 
-          <a
+          {/* <a
             href="https://dribbble.com/arslaanamar/shots"
             target="_blank"
             rel="noopener noreferrer"
@@ -55,9 +57,15 @@ const Footer = () => {
             <svg className="footer__icons-item">
               <use xlinkHref={`#${dribbble.id}`} />
             </svg>
+          </a> */}
+
+          <a href="mailto:amar.arslaan@gmail.com" rel="noopener noreferrer">
+            <svg className="footer__icons-item">
+              <use xlinkHref={`#${mail.id}`} />
+            </svg>
           </a>
 
-          <a
+          {/* <a
             href="https://www.instagram.com/arslaanamar/"
             target="_blank"
             rel="noopener noreferrer"
@@ -65,7 +73,7 @@ const Footer = () => {
             <svg className="footer__icons-item">
               <use xlinkHref={`#${insta.id}`} />
             </svg>
-          </a>
+          </a> */}
         </div>
       </Container>
     </footer>

@@ -111,3 +111,7 @@ h2::selection,
 a::selection {
   background-color: var(--color-yellow);
 }
+
+a:hover {
+  cursor: pointer;
+}

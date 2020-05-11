@@ -15,6 +15,7 @@ const ProjectsPage = () => {
             frontmatter {
               title
               date
+              type
             }
             html
             excerpt
@@ -45,8 +46,11 @@ const ProjectsPage = () => {
                   bg="#fccd04"
                   duration={0.5}
                 >
-                  <h2>{edge.node.frontmatter.title}</h2>
-                  {/* <p>{edge.node.frontmatter.date}</p> */}
+                  <div className="project-card">
+                    <h2>{edge.node.frontmatter.title}</h2>
+                    {/* <p>{edge.node.frontmatter.date}</p>
+                    <p>{edge.node.frontmatter.type}</p> */}
+                  </div>
                 </AniLink>
               </li>
             );
